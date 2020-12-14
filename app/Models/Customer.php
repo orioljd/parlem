@@ -9,6 +9,11 @@ class Customer extends Model
 {
     use HasFactory;
 
+    public function getRouteKeyName()
+    {
+        return 'customerId';
+    }
+
     public function products()
     {
         return $this->hasMany(Product::class, 'customerId', 'customerId');

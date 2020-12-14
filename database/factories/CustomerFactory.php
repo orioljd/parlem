@@ -36,12 +36,14 @@ class CustomerFactory extends Factory
 
     private function docNumber($doc_type): string
     {
-        if ($doc_type == 'nif') {
+        if ('nif' === $doc_type) {
             return $this->faker->dni;
-        } else if ($doc_type == 'nie') {
-            return $this->faker->randomElement(['X', 'Y', 'Z']) . $this->faker->dni;
-        } else {
-            return $this->faker->numberBetween(100000, 99999999);
         }
+
+        if ('nie' === $doc_type) {
+            return $this->faker->randomElement(['X', 'Y', 'Z']) . $this->faker->dni;
+        }
+
+        return $this->faker->numberBetween(100000, 99999999);
     }
 }
