@@ -1,14 +1,12 @@
 # Objectiu del codi
 
 Es tracta de fer una fitxa de client amb els seus productes, aquestes dades s'obtindran mitjançant una API. Per veure la fitxa de client s'accedeix a l'arrel:
-
-http://www.parlem.local
+- http://www.parlem.local
 
 I les API a:
-
-http://www.parlem.local/api/customers
-http://www.parlem.local/api/customer/{customerId}
-http://www.parlem.local/api/products?customer={customerId}
+- http://www.parlem.local/api/customers
+- http://www.parlem.local/api/customer/{customerId}
+- http://www.parlem.local/api/products?customer={customerId}
 
 
 > **ATENCIÓ No hi ha restricció d'accés**: S'hauria doncs de programar. Obtenir i utilitzar les credencials necessàries per accedir a aquesta informació privada.
