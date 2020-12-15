@@ -41,7 +41,7 @@ const app = new Vue({
         },
         getCustomerInfo: function(customer) {
             let self = this;
-            return axios.get('/api/customer/' + customer)
+            return axios.get('/api/customers/' + customer)
                 .then(function (response) {
                     self.customerInfo = response.data;
                 }).catch(function (error) {

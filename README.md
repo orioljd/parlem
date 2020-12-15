@@ -5,7 +5,7 @@ Es tracta de fer una fitxa de client amb els seus productes, aquestes dades s'ob
 
 I les API a:
 - http://www.parlem.local/api/customers
-- http://www.parlem.local/api/customer/{customerId}
+- http://www.parlem.local/api/customers/{customerId}
 - http://www.parlem.local/api/products?customer={customerId}
 
 
@@ -54,13 +54,13 @@ logs i cache per això es recomendable seguir les instruccions en el cas de que 
 # Utilització de la API (partim que la URL base es parlem.local)
 
 ## Llistat de clients (mètode GET)
-`http://parlem.local/api/customer`
+`http://parlem.local/api/customers`
 
 ## Obtenir un client per id (mètode GET)
-`http://parlem.local/api/customer/49`
+`http://parlem.local/api/customers/49`
 
 > 49 es el `customerId` del client que es vol obtenir
 
 ## Llistat de productes (mètode GET)
-`http://parlem.local/api/product?customer=49`
+`http://parlem.local/api/products?customer=49`
 > customer es per filtrar que volem els productes del client amb `customerId` 49

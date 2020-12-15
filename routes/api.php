@@ -21,7 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/customers', [CustomerController::class, 'index']);
-Route::get('/customer/{customer}', [CustomerController::class, 'show']);
-
-Route::get('/products', [ProductController::class, 'index']);
+Route::resource('customers', CustomerController::class)->only(['index', 'show']);
+Route::resource('products', ProductController::class)->only(['index']);
