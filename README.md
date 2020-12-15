@@ -15,9 +15,13 @@ Es tracta de fer una fitxa de client amb els seus productes, aquestes dades s'ob
 
 # Ús de Laravel com a framework
 
-S'ha utilitzat Laravel com a framework.
+S'ha utilitzat Laravel 8 com a framework.
 
 - [Web oficial de laravel](https://laravel.com/).
+
+> **Configuracions inicials**: He deixat totes les configuracions inicials que
+venen amb laravel 8, per tant encara que hi sigui no he utilitzat docker, ni les
+taules de usuaris.
 
 ## Instal·lació
 Per al correcte funcionamient, després d'haver fet `clone` del projecte:
@@ -31,6 +35,8 @@ Per al correcte funcionamient, després d'haver fet `clone` del projecte:
 - Des del directori del projecte executar:
   - `composer install` que instalarà totes les dependencies
   - `php artisan migrate --seed` que crearà les taules customers i products i les omplirà.
+  - `npm install` això instalarà totes les dependencies del frontend
+  - `npm run prod` això compilarà els javascripts i css que necessita la part de front
 
 ## Problemes de permisos en Linux
 Es posible que hi hagin problemes de permisos d'accés als directoris
